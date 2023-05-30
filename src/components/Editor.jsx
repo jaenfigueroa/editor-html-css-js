@@ -69,7 +69,7 @@ export const Editor = () => {
         </div>
       </div>
       <div className='editor__container-iframe'>
-        <h2 className='editor__names'>Resultado</h2>
+        <h2 className='editor__names'>Output</h2>
         <iframe ref={iframeRef} title='Result' className='result-iframe' />
       </div>
     </div>
