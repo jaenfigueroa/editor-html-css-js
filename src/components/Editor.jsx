@@ -42,7 +42,7 @@ export const Editor = () => {
           <CodeMirror
             className='editor__editor-code'
             value={htmlCode}
-            height='200px'
+            height='250px'
             extensions={html()}
             onChange={(value) => setHtmlCode(value)}
           />
@@ -52,7 +52,7 @@ export const Editor = () => {
           <CodeMirror
             className='editor__editor-code'
             value={cssCode}
-            height='200px'
+            height='250px'
             extensions={css()}
             onChange={(value) => setCssCode(value)}
           />
@@ -62,7 +62,7 @@ export const Editor = () => {
           <CodeMirror
             className='editor__editor-code'
             value={jsCode}
-            height='200px'
+            height='250px'
             extensions={javascript()}
             onChange={(value) => setJsCode(value)}
           />

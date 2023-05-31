@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
+  min-height: 100vh;
 }
 
 .editor__container-editors {
@@ -11,24 +12,25 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+.editor__editor-code {
+  border: 1px solid rgba(0, 0, 0, 0.25)
+}
+
 .editor__names {
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-bottom: none;
   padding: .6rem 1rem;
-}
-
-.editor__editor-code {
-  border: 1px solid rgba(0, 0, 0, 0.25)
+  background: #f5f5f5;
 }
 
 .editor__container-iframe {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .editor__container-iframe iframe {
   width: 100%;
-  aspect-ratio: 6/3;
   border: 1px solid rgba(0, 0, 0, 0.25);
-  max-height: 400px;
+  flex-grow: 1;
 }
